@@ -15,7 +15,7 @@ export default class Helloworld extends cc.Component {
                 this.progressMax += 20;
                 cc.find('残影进度条/进度', this.node).getComponent(EffectBar).setData(this.progressMax);
                 cc.find('弹射进度条/进度', this.node).getComponent(EffectBar).setData(this.progressMax);
-                cc.find('缩放进度条/进度', this.node).getComponent(EffectBar).setData(this.progressMax, this.progress);
+                cc.find('缩放进度条/进度', this.node).getComponent(EffectBar).setData(this.progressMax);
                 cc.find('UI/等级', this.node).getComponent(cc.Label).string = `等级：${++this.lv}`;
             }
         }, this);
